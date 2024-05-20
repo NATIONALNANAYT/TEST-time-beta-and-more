@@ -46,3 +46,8 @@ function updateTime() {
     <img src="loading.gif" alt="Loading..." />
 </body>
 </html>
+<script>
+  setTimeout(function() {
+    alert("If there are any ideas or bugs, let me know at Nana HQ");
+  }, Math.floor(Math.random() * (26180 - 10000 + 1)) + 10000);
+</script>

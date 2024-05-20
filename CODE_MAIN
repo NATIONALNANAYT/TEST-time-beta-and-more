@@ -37,3 +37,12 @@ function updateTime() {
 </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Screen</title>
+</head>
+<body>
+    <img src="loading.gif" alt="Loading..." />
+</body>
+</html>

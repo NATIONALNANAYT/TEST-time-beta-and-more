@@ -37,15 +37,7 @@ function updateTime() {
 </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Loading Screen</title>
-</head>
-<body>
-    <img src="loading.gif" alt="Loading..." />
-</body>
-</html>
+
 <script>
   setTimeout(function() {
     alert("If there are any ideas or bugs, let me know at Nana HQ");

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Toggle Button</title>
+<style>
+.clock {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+</style>
+</head>
+<body>
+<button onclick="toggleClock()">Toggle Time</button>
+<div class="clock" id="clock">Loading...</div>
+<script>
+function toggleClock() {
+  var clock = document.getElementById("clock");
+  if (clock.classList.contains("hidden")) {
+    clock.classList.remove("hidden");
+    updateTime();
+  } else {
+    clock.classList.add("hidden");
+  }
+}
+
+function updateTime() {
+  var clock = document.getElementById("clock");
+  clock.innerText = new Date().toLocaleTimeString();
+  setTimeout(updateTime, 1000);
+}
+</script>
+</body>
+</html>
